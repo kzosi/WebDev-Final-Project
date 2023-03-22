@@ -1,0 +1,10 @@
+<app-missile [stop]="playtime" [hit]="hit" (Win)="successfulAttempt()" (Fail)="failedAttempt()" (missileData)="getMissileInfo($event)" ></app-missile>
+<app-dog [hit]="hit"  (ufoData)="getUfoInfo($event)"></app-dog>
+<div class ="pointbar" >
+  <button *ngIf="!playtime && logged" (click)="saveScore()">Save score</button>
+  <p>TIME LEFT</p>
+  <p STYLE='border-style: solid;' >{{secondsLeft}}</p>
+  <p>POINTS</p>
+  <p STYLE='border-style: solid;' >{{score}}</p>
+</div>
+

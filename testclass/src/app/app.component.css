@@ -1,0 +1,204 @@
+/* Add a black background color to the top navigation  MAIN*/
+.topnav {
+  background-color: #333;
+  overflow: hidden;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: left;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+  background-color: #F7D1F7;
+  color: black;
+}
+
+/* Add a color to the active/current link */
+.topnav a.active {
+  background-color: #F88EF8;
+  color: white;
+}
+
+.topnav a.title {
+  background-color: #333;
+  color: white;
+  font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
+
+}
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+* {box-sizing: border-box}
+
+/* Add padding to containers REGISTER */
+.container {
+  padding: 13px;
+}
+
+/* Full-width input fields */
+input[type=text], input[type=password] {
+  width: 30%;
+  padding: 15px;
+  margin: 5px 0 10px 0;
+  display: inline-block;
+  border: none;
+  background: white;
+}
+
+input[type=text]:focus, input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+/* Overwrite default styles of hr */
+hr {
+  border: 1px solid #f1f1f1;
+  margin-bottom: 25px;
+}
+
+/* Set a style for the submit/register button */
+.registerbtn {
+  background-color: #F88EF8;
+  color: white;
+  padding: 16px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 20%;
+  opacity: 0.9;
+}
+
+.registerbtn:hover {
+  opacity:1;
+}
+
+/* Add a blue text color to links */
+a {
+  color: dodgerblue;
+}
+
+/* Set a grey background color and center the text of the "sign in" section */
+.signin {
+  background-color: #F7D1F7;
+  text-align: center;
+}
+
+.ufo2{position:absolute;bottom:100px;left:0px;width:60px; top: 140px;}
+.ufo3{position:absolute;bottom:170px;left:0px;width:60px; top: 210px;}
+.ufo4{position:absolute;bottom:240px;left:0px;width:60px; top: 280px;}
+.ufo5{position:absolute;bottom:310px;left:0px;width:60px; top: 350px;}
+
+#missile {position:absolute;bottom:10px;
+  left:300px; height:70px;}
+#ufo {position: absolute; bottom:30px;left:0px; top: 70px;}
+
+.pointbar {position:absolute;bottom:10px;
+  right:30px;width:150px;height:160px;
+  background-color:#F88EF8;color:white;
+  text-align:center; font-size:12pt; padding-top:5px}
+
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700');
+
+$base-spacing-unit: 24px;
+$half-spacing-unit: $base-spacing-unit / 2;
+
+$color-alpha: #1772FF;
+$color-form-highlight: #EEEEEE;
+
+*, *:before, *:after {
+  box-sizing:border-box;
+}
+
+body {
+  padding:$base-spacing-unit;
+  font-family:'Source Sans Pro', sans-serif;
+  margin:0;
+}
+
+h1,h2,h3,h4,h5,h6 {
+  margin:0;
+}
+
+.container2 {
+  max-width: 1000px;
+  margin-right:auto;
+  margin-left:auto;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  min-height:90vh;
+}
+
+.table {
+  width:100%;
+  border:1px solid $color-form-highlight;
+}
+
+.table-header {
+  align-items:center;
+  height: 40px;
+  display:flex;
+  width:100%;
+  background:#000;
+  padding:($half-spacing-unit * 1.5) 0;
+}
+
+.table-row {
+  align-items:center;
+  height: 40px;
+  display:flex;
+  width:100%;
+  padding:($half-spacing-unit * 1.5) 0;
+  background:#F1ABF1;
+
+}
+
+.table-row2 {
+  align-items:center;
+  height: 40px;
+  display:flex;
+  width:100%;
+  padding:($half-spacing-unit * 1.5) 0;
+
+}
+
+.table-data, .header__item {
+  flex: 1 1 20%;
+  text-align:center;
+}
+
+.header__item {
+  text-transform:uppercase;
+}
+
+.filter__link {
+  color:white;
+  text-decoration: none;
+  position:relative;
+  display:inline-block;
+  padding-left:$base-spacing-unit;
+  padding-right:$base-spacing-unit;
+
+&::after {
+   content:'';
+   position:absolute;
+   right:-($half-spacing-unit * 1.5);
+   color:white;
+   font-size:$half-spacing-unit;
+   top: 50%;
+   transform: translateY(-50%);
+ }
+
+}

@@ -1,0 +1,198 @@
+<div class="grid-container">
+<div class="container2">
+
+  <div class="table" >
+    <div class="table-header">
+      <div class="header__item"><a class="filter__link" href="#">Records</a></div>
+    </div>
+    <div class="table-header">
+      <div class="header__item2"><a  class="filter__link" href="#"></a></div>
+      <div class="header__item"><a class="filter__link" href="#">User</a></div>
+      <div class="header__item"><a class="filter__link filter__link--number" href="#">Points</a></div>
+      <div class="header__item"><a class="filter__link filter__link--number" href="#">Dogs</a></div>
+      <div class="header__item"><a class="filter__link filter__link--number" href="#">Secs</a></div>
+      <div class="header__item"><a class="filter__link filter__link--number" href="#">Date</a></div>
+    </div>
+    <div class="table-content">
+      <div class="table-row2">
+        <div class="first-data">1</div>
+        <div class="table-data">{{Users[0]}}</div>
+        <div class="table-data">{{Points[0]}}</div>
+        <div class="table-data">{{Dogs[0]}}</div>
+        <div class="table-data">{{Seconds[0]}}</div>
+        <div class="table-data">{{Date[0]}}</div>
+      </div>
+      <div class="table-row">
+        <div class="first-data">2</div>
+        <div class="table-data">{{Users[1]}}</div>
+        <div class="table-data">{{Points[1]}}</div>
+        <div class="table-data">{{Dogs[1]}}</div>
+        <div class="table-data">{{Seconds[1]}}</div>
+        <div class="table-data">{{Date[1]}}</div>
+      </div>
+      <div class="table-row2">
+        <div class="first-data">3</div>
+        <div class="table-data">{{Users[2]}}</div>
+        <div class="table-data">{{Points[2]}}</div>
+        <div class="table-data">{{Dogs[2]}}</div>
+        <div class="table-data">{{Seconds[2]}}</div>
+        <div class="table-data">{{Date[2]}}</div>
+      </div>
+      <div class="table-row">
+        <div class="first-data">4</div>
+        <div class="table-data">{{Users[3]}}</div>
+        <div class="table-data">{{Points[3]}}</div>
+        <div class="table-data">{{Dogs[3]}}</div>
+        <div class="table-data">{{Seconds[3]}}</div>
+        <div class="table-data">{{Date[3]}}</div>
+      </div>
+      <div class="table-row2">
+        <div class="first-data">5</div>
+        <div class="table-data">{{Users[4]}}</div>
+        <div class="table-data">{{Points[4]}}</div>
+        <div class="table-data">{{Dogs[4]}}</div>
+        <div class="table-data">{{Seconds[4]}}</div>
+        <div class="table-data">{{Date[4]}}</div>
+      </div>
+      <div class="table-row">
+        <div class="first-data">6</div>
+        <div class="table-data">{{Users[5]}}</div>
+        <div class="table-data">{{Points[5]}}</div>
+        <div class="table-data">{{Dogs[5]}}</div>
+        <div class="table-data">{{Seconds[5]}}</div>
+        <div class="table-data">{{Date[5]}}</div>
+      </div>
+      <div class="table-row2">
+        <div class="first-data">7</div>
+        <div class="table-data">{{Users[6]}}</div>
+        <div class="table-data">{{Points[6]}}</div>
+        <div class="table-data">{{Dogs[6]}}</div>
+        <div class="table-data">{{Seconds[6]}}</div>
+        <div class="table-data">{{Date[6]}}</div>
+      </div>
+      <div class="table-row">
+        <div class="first-data">8</div>
+        <div class="table-data">{{Users[7]}}</div>
+        <div class="table-data">{{Points[7]}}</div>
+        <div class="table-data">{{Dogs[7]}}</div>
+        <div class="table-data">{{Seconds[7]}}</div>
+        <div class="table-data">{{Date[7]}}</div>
+      </div>
+      <div class="table-row2">
+        <div class="first-data">9</div>
+        <div class="table-data">{{Users[8]}}</div>
+        <div class="table-data">{{Points[8]}}</div>
+        <div class="table-data">{{Dogs[8]}}</div>
+        <div class="table-data">{{Seconds[8]}}</div>
+        <div class="table-data">{{Date[8]}}</div>
+      </div>
+      <div class="table-row">
+        <div class="first-data">10</div>
+        <div class="table-data">{{Users[9]}}</div>
+        <div class="table-data">{{Points[9]}}</div>
+        <div class="table-data">{{Dogs[9]}}</div>
+        <div class="table-data">{{Seconds[9]}}</div>
+        <div class="table-data">{{Date[9]}}</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="container2" *ngIf="userlogged">
+
+  <div class="table" >
+    <div class="table-header">
+      <div class="header__item"><a class="filter__link" href="#">Your Records</a></div>
+    </div>
+    <div class="table-header">
+      <div class="header__item2"><a  class="filter__link" href="#"></a></div>
+      <div class="header__item"><a class="filter__link" href="#">User</a></div>
+      <div class="header__item"><a class="filter__link filter__link--number" href="#">Points</a></div>
+      <div class="header__item"><a class="filter__link filter__link--number" href="#">Dogs</a></div>
+      <div class="header__item"><a class="filter__link filter__link--number" href="#">Secs</a></div>
+      <div class="header__item"><a class="filter__link filter__link--number" href="#">Date</a></div>
+    </div>
+    <div class="table-content">
+      <div class="table-row2">
+        <div class="first-data">1</div>
+        <div class="table-data">{{LoggedUsers[0]}}</div>
+        <div class="table-data">{{LoggedPoints[0]}}</div>
+        <div class="table-data">{{LoggedDogs[0]}}</div>
+        <div class="table-data">{{LoggedSeconds[0]}}</div>
+        <div class="table-data">{{LoggedDate[0]}}</div>
+      </div>
+      <div class="table-row">
+        <div class="first-data">2</div>
+        <div class="table-data">{{LoggedUsers[1]}}</div>
+        <div class="table-data">{{LoggedPoints[1]}}</div>
+        <div class="table-data">{{LoggedDogs[1]}}</div>
+        <div class="table-data">{{LoggedSeconds[1]}}</div>
+        <div class="table-data">{{LoggedDate[1]}}</div>
+      </div>
+      <div class="table-row2">
+        <div class="first-data">3</div>
+        <div class="table-data">{{LoggedUsers[2]}}</div>
+        <div class="table-data">{{LoggedPoints[2]}}</div>
+        <div class="table-data">{{LoggedDogs[2]}}</div>
+        <div class="table-data">{{LoggedSeconds[2]}}</div>
+        <div class="table-data">{{LoggedDate[2]}}</div>
+      </div>
+      <div class="table-row">
+        <div class="first-data">4</div>
+        <div class="table-data">{{LoggedUsers[3]}}</div>
+        <div class="table-data">{{LoggedPoints[3]}}</div>
+        <div class="table-data">{{LoggedDogs[3]}}</div>
+        <div class="table-data">{{LoggedSeconds[3]}}</div>
+        <div class="table-data">{{LoggedDate[3]}}</div>
+      </div>
+      <div class="table-row2">
+        <div class="first-data">5</div>
+        <div class="table-data">{{LoggedUsers[4]}}</div>
+        <div class="table-data">{{LoggedPoints[4]}}</div>
+        <div class="table-data">{{LoggedDogs[4]}}</div>
+        <div class="table-data">{{LoggedSeconds[4]}}</div>
+        <div class="table-data">{{LoggedDate[4]}}</div>
+      </div>
+      <div class="table-row">
+        <div class="first-data">6</div>
+        <div class="table-data">{{LoggedUsers[5]}}</div>
+        <div class="table-data">{{LoggedPoints[5]}}</div>
+        <div class="table-data">{{LoggedDogs[5]}}</div>
+        <div class="table-data">{{LoggedSeconds[5]}}</div>
+        <div class="table-data">{{LoggedDate[5]}}</div>
+      </div>
+      <div class="table-row2">
+        <div class="first-data">7</div>
+        <div class="table-data">{{LoggedUsers[6]}}</div>
+        <div class="table-data">{{LoggedPoints[6]}}</div>
+        <div class="table-data">{{LoggedDogs[6]}}</div>
+        <div class="table-data">{{LoggedSeconds[6]}}</div>
+        <div class="table-data">{{LoggedDate[6]}}</div>
+      </div>
+      <div class="table-row">
+        <div class="first-data">8</div>
+        <div class="table-data">{{LoggedUsers[7]}}</div>
+        <div class="table-data">{{LoggedPoints[7]}}</div>
+        <div class="table-data">{{LoggedDogs[7]}}</div>
+        <div class="table-data">{{LoggedSeconds[7]}}</div>
+        <div class="table-data">{{LoggedDate[7]}}</div>
+      </div>
+      <div class="table-row2">
+        <div class="first-data">9</div>
+        <div class="table-data">{{LoggedUsers[8]}}</div>
+        <div class="table-data">{{LoggedPoints[8]}}</div>
+        <div class="table-data">{{LoggedDogs[8]}}</div>
+        <div class="table-data">{{LoggedSeconds[8]}}</div>
+        <div class="table-data">{{LoggedDate[8]}}</div>
+      </div>
+      <div class="table-row">
+        <div class="first-data">10</div>
+        <div class="table-data">{{LoggedUsers[9]}}</div>
+        <div class="table-data">{{LoggedPoints[9]}}</div>
+        <div class="table-data">{{LoggedDogs[9]}}</div>
+        <div class="table-data">{{LoggedSeconds[9]}}</div>
+        <div class="table-data">{{LoggedDate[9]}}</div>
+      </div>
+    </div>
+</div>
+</div>

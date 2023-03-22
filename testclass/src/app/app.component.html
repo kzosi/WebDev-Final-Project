@@ -1,0 +1,14 @@
+<div class="topnav">
+  <a class="title">Bombarding dogs with love</a>
+  <a class="active" routerLink="homepage" routerLinkActive="active">Home</a>
+  <a routerLink="settings" >Settings</a>
+  <a routerLink="game" routerLinkActive="active">Play</a>
+  <a routerLink="scores" routerLinkActive="active">Scores</a>
+  <a routerLink="register" routerLinkActive="active" style="float: right;">Register</a>
+  <a routerLink="login" routerLinkActive="active" style="float: right;" *ngIf="!logged">Login</a>
+  <a style="float: right;" (click)="logOut()" *ngIf="logged">Log out</a>
+</div>
+
+<section class="container" id="contenedor">
+  <router-outlet></router-outlet>
+</section>

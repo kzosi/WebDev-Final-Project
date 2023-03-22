@@ -1,0 +1,25 @@
+<div class="container">
+  <h1>Settings</h1>
+  <hr>
+
+  <div><label  for="number"><b>Number of dogs</b></label>
+    <select id="HowManyDogs">
+      <option value=1>1</option>
+      <option value=2>2</option>
+      <option value=3>3</option>
+      <option value=4>4</option>
+      <option value=5>5</option>
+    </select></div>
+
+
+  <div><label for="tim"><b>Time(seconds)</b></label>
+    <select id="HowMuchTime">
+      <option value=60>60</option>
+      <option value=120>120</option>
+      <option value=180>180</option>
+    </select></div>
+
+
+  <hr>
+  <button id='savesettings' class="registerbtn" (click)="setLocalStorage()">Submit</button>
+</div>
